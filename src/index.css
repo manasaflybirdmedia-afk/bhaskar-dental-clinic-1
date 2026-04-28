@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --clinic-blue-50: #f2fbff;
+    --clinic-blue-100: #d9f4ff;
+    --clinic-blue-200: #baeaff;
+    --clinic-blue-400: #2cb4e8;
+    --clinic-blue-600: #0078b8;
+    --clinic-blue-700: #00598b;
+    --clinic-teal-400: #1ec7b6;
+    --clinic-slate-800: #0f2238;
+    --clinic-slate-700: #1e3652;
+    --clinic-slate-500: #5f738a;
+    --clinic-border: #d7e7f2;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    color: var(--clinic-slate-800);
+    background: #ffffff;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  section {
+    scroll-margin-top: 7.5rem;
+  }
+
+  ::selection {
+    background: var(--clinic-blue-200);
+    color: var(--clinic-slate-800);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-cyan-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-cyan-600/25 transition-all duration-300 hover:-translate-y-0.5 hover:bg-cyan-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-cyan-600 px-6 py-3 text-sm font-semibold text-cyan-700 transition-all duration-300 hover:-translate-y-0.5 hover:bg-cyan-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600;
+  }
+
+  .input-field {
+    @apply w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-800 outline-none transition-all placeholder:text-slate-400 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-200;
+  }
+
+  .section-surface {
+    @apply rounded-[2rem] border border-slate-200 bg-white/90 shadow-[0_22px_70px_rgba(7,35,62,0.08)];
+  }
+}
+
+.soft-grid {
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(30, 199, 182, 0.15), transparent 35%),
+    radial-gradient(circle at 85% 8%, rgba(44, 180, 232, 0.18), transparent 34%),
+    linear-gradient(rgba(0, 120, 184, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 120, 184, 0.06) 1px, transparent 1px);
+  background-size:
+    auto,
+    auto,
+    32px 32px,
+    32px 32px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: transform 650ms ease, opacity 650ms ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal,
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
