@@ -1,4 +1,4 @@
-﻿import { useEffect } from 'react'
+import { useEffect } from 'react'
 import {
   Baby,
   BadgeCheck,
@@ -572,17 +572,16 @@ function App() {
                 </div>
 
                 <div className="section-surface p-6 sm:p-8">
-                  <div className="rounded-2xl border border-dashed border-cyan-300 bg-cyan-50 p-6 text-center">
+                  <div className="rounded-2xl border border-cyan-200 bg-cyan-50/50 p-6 text-center">
                     <MapPin className="mx-auto h-8 w-8 text-cyan-700" aria-hidden="true" />
                     <h4 className="mt-3 text-lg font-bold text-slate-900">
-                      Google Map Placeholder
+                      Find Us on Google Maps
                     </h4>
                     <p className="mt-2 text-sm text-slate-600">
-                      Integrate your exact clinic pin here for turn-by-turn
-                      directions.
+                      Get turn-by-turn directions to our clinic for your visit.
                     </p>
                     <a
-                      href="https://maps.google.com/?q=Banjara+Hills+Hyderabad"
+                      href={contactInfo.mapLink}
                       target="_blank"
                       rel="noreferrer"
                       className="btn-secondary mt-5"

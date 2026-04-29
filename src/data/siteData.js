@@ -342,6 +342,7 @@ export const contactInfo = {
   email: 'care@bhaskardentalclinic.com',
   address:
     'Bhaskar Dental Clinic, 22-4-18, Main Road, Banjara Hills Extension, Hyderabad, Telangana 500034',
+  mapLink: 'https://maps.app.goo.gl/TWnVG8BdLQ15vysdA?g_st=iw',
   hours: [
     'Mon - Sat: 9:00 AM - 8:30 PM',
     'Sunday: 10:00 AM - 2:00 PM',
