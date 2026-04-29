@@ -341,7 +341,7 @@ export const contactInfo = {
   whatsapp: '+91 95531 91391',
   email: 'care@bhaskardentalclinic.com',
   address:
-    'Bhaskar Dental Clinic, 22-4-18, Main Road, Banjara Hills Extension, Hyderabad, Telangana 500034',
+    'Bhaskar Dental Clinic & Implant Centre, Nokayya complex, RTC Complex Rd, opposite Reliance trends, Sarada Colony, Anakapalli, Andhra Pradesh 531001',
   mapLink: 'https://maps.app.goo.gl/TWnVG8BdLQ15vysdA?g_st=iw',
   hours: [
     'Mon - Sat: 9:00 AM - 8:30 PM',
