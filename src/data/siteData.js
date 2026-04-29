@@ -241,23 +241,23 @@ export const whyChooseUs = [
 
 export const doctors = [
   {
-    name: 'Dr. Bhaskar Reddy',
-    qualification: 'BDS, MDS (Prosthodontics)',
-    specialization: 'Implants, Full Mouth Rehabilitation',
+    name: 'Dr. Bhaskar Kinthada',
+    qualification: 'BDS, MDS (Orthodontics)',
+    specialization: 'Braces, Aligners, Smile Corrections',
     experience: '16+ years experience',
     image:
       'https://images.pexels.com/photos/5355698/pexels-photo-5355698.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-5355698.jpg&fm=jpg',
   },
   {
-    name: 'Dr. Ananya Sharma',
-    qualification: 'BDS, MDS (Orthodontics)',
-    specialization: 'Braces, Aligners, Smile Corrections',
-    experience: '11+ years experience',
+    name: 'Dr. Abhishek',
+    qualification: 'BDS, MDS (Oral & Maxillofacial Surgery)',
+    specialization: 'Wisdom Tooth Removal, Jaw Surgery, Facial Trauma',
+    experience: '12+ years experience',
     image:
       'https://images.pexels.com/photos/5622233/pexels-photo-5622233.jpeg?cs=srgb&dl=pexels-gustavo-fring-5622233.jpg&fm=jpg',
   },
   {
-    name: 'Dr. Karthik Rao',
+    name: 'Dr. Dileep',
     qualification: 'BDS, MDS (Endodontics)',
     specialization: 'Root Canal Treatment, Cosmetic Restorations',
     experience: '13+ years experience',
