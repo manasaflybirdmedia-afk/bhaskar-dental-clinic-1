@@ -598,10 +598,13 @@ function App() {
 
       <footer className="bg-slate-900 py-14 text-slate-200">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
-          <div>
-            <h3 className="text-2xl font-extrabold text-white">
+          <div className="flex flex-col">
+            <h3 className="text-2xl font-extrabold leading-none text-white">
               Bhaskar <span className="text-cyan-400">Dental Clinic</span>
             </h3>
+            <span className="mt-1.5 text-xs font-bold uppercase tracking-[0.15em] text-cyan-400/90">
+              & Implant Centre
+            </span>
             <p className="mt-4 text-sm leading-relaxed text-slate-300">
               Clean, modern, and compassionate dental care for the whole family.
               We are committed to helping every patient smile with confidence.

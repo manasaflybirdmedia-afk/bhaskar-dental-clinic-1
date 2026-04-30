@@ -44,10 +44,15 @@ function Header({ navLinks }) {
           <a
             href="#home"
             onClick={closeMenu}
-            className="text-xl font-extrabold tracking-tight text-slate-900 md:text-2xl"
+            className="flex flex-col group"
           >
-            Bhaskar
-            <span className="text-cyan-600"> Dental Clinic</span>
+            <span className="text-xl font-extrabold tracking-tight leading-none text-slate-900 md:text-2xl">
+              Bhaskar
+              <span className="text-cyan-600"> Dental Clinic</span>
+            </span>
+            <span className="mt-1 text-[10px] font-bold uppercase tracking-[0.15em] text-cyan-700/80 md:text-[11px]">
+              & Implant Centre
+            </span>
           </a>
 
           <div className="hidden items-center gap-2 md:flex">
